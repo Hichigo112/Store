@@ -41,9 +41,16 @@ nav {
           color: var(--grey)
         }
       }
+      .active {
+        display: inline-block;
+        border-bottom: 1px solid var(--grey);
+        padding-bottom: 3px;
+      }
     }
   }
 }
+
+
 
 .icon-container {
   display: flex;
