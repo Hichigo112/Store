@@ -1,1 +1,33 @@
-<p>header works!</p>
+<header [ngClass]="{header: true, open}">
+  <div class="logo">
+    <img [src]="'assets/icons/logo.svg'" alt="">
+  </div>
+  <nav class="menu">
+    <ul>
+      <li><a class="item" routerLink='attendance' routerLinkActive="active" (click)="closeMenu()">Услуги</a></li>
+      <li><a class="item" routerLink='delivery' routerLinkActive="active" (click)="closeMenu()">Доставка</a></li>
+      <li><a class="item" routerLink='payment' routerLinkActive="active" (click)="closeMenu()">Оплата</a></li>
+      <li><a class="item" routerLink='projects' routerLinkActive="active" (click)="closeMenu()">Проекты</a></li>
+    </ul>
+  </nav>
+  <div class="icon-container">
+    <div class="icon">
+      <img [src]="'assets/icons/favorite.svg'" alt="">
+    </div>
+    <div class="icon">
+      <img [src]="'assets/icons/cart.svg'" alt="">
+    </div>
+  </div>
+  <div class="contact">
+    <div class="number">8 (843) 203-93-43</div>
+    <div >
+      <a class="call" href="">заказать обратный звонок</a>
+    </div>
+    <div class="phone">
+      <img [src]="'assets/icons/phone.svg'" alt="">
+    </div>
+    <button class="burger" (click)="toggleMenu()">
+      <img [src]="'assets/icons/burger.svg'" alt="">
+    </button>
+  </div>
+</header>
