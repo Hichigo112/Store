@@ -269,6 +269,7 @@ nav {
   }
   .header.open nav {
     display: block;
+    z-index: 1;
   }
   .sub-header {
     .item {
