@@ -31,3 +31,33 @@
     </button>
   </div>
 </header>
+<div class="sub-header">
+  <div class="item">
+    <button class="catalog">
+      Каталог
+      <img class="search-mobile" ngSrc="assets/icons/search.svg" alt="" height="19" width="16">
+    </button>
+  </div>
+  <div class="item">
+    <a routerLink="stock" class="stock">АКЦИИ</a>
+  </div>
+  <div class="item">
+    <input placeholder="Введите название товара">
+  </div>
+  <div class="item">
+    <a [routerLink]="['/home/about']" class="about">О КОМПАНИИ</a>
+  </div>
+  <div class="item">
+    <a [routerLink]="['/home/contacts']" class="about">КОНТАКТЫ</a>
+  </div>
+  <div class="item">
+    <button class="search">
+      <img ngSrc="assets/icons/search.svg" alt="" height="19" width="16">
+    </button>
+  </div>
+  <div class="item">
+    <button class="order">Оптовый заказ</button>
+  </div>
+
+</div>
+
