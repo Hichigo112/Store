@@ -1,0 +1,156 @@
+.card {
+  position: relative;
+  width: 433px;
+  height: 264px;
+  border-radius: 8px;
+  &:hover {
+    .text {
+      display: block;
+    }
+  }
+  .screen {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.text {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(86, 97, 203, 0.90);
+  backdrop-filter: blur(2px);
+  border-radius: 8px;
+  .triangle {
+    position: absolute;
+    &:nth-child(1) {
+      top: 10px;
+      left: 10px;
+    }
+    &:nth-child(2) {
+      top: 10px;
+      right: 10px;
+      transform: rotate(90deg);
+    }
+    &:nth-child(3) {
+      bottom: 10px;
+      left: 10px;
+      transform: rotate(-90deg);
+    }
+    &:nth-child(4) {
+      bottom: 10px;
+      right: 10px;
+      transform: rotate(-180deg);
+    }
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-left: 42px;
+    list-style-type: none;
+    li {
+      padding-bottom: 15px;
+    }
+    .title {
+      color: var(--text-color-white, #FFF);
+      font-family: Roboto, sans-serif;
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+    .description {
+      color: var(--text-color-white, #FFF);
+      font-family: Roboto, sans-serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 144.187%;
+      max-width: 315px;
+    }
+    .link {
+      cursor: pointer;
+      width: 155px;
+      height: 33px;
+      border-radius: 8px;
+      color: #FFFFFF;
+      background: rgba(86, 97, 203, 0.90);
+      border: 1px solid #FFFFFF;
+    }
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .card {
+    width: 301px;
+    height: 184px;
+  }
+  .text {
+    ul {
+      .title {
+        font-size: 16px;
+      }
+      .description {
+        font-size: 12px;
+      }
+      .link {
+        width: 108.392px;
+        height: 23.077px;
+        font-size: 9.79px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 234px;
+    height: 143px;
+  }
+
+  .text {
+    ul {
+      .title {
+        font-size: 14px;
+      }
+      .description {
+        font-size: 11px;
+      }
+      .link {
+        width: 84.174px;
+        height: 17.921px;
+        font-size: 7.603px;;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .card {
+    width: 212px;
+    height: 132px;
+  }
+  .text {
+    ul {
+      .description {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .card {
+    width: 132px;
+    height: 82px;
+    &:hover {
+      .text {
+        display: none;
+      }
+    }
+  }
+}
