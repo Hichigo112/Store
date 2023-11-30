@@ -4,14 +4,7 @@
   route="/stock"
 ></app-block-title>
 <section class="section">
-  <app-card></app-card>
-  <app-card></app-card>
-  <app-card></app-card>
-  <app-card></app-card>
-  <app-card></app-card>
-  <app-card></app-card>
-  <app-card></app-card>
-  <app-card></app-card>
-  <app-card></app-card>
-  <app-card></app-card>
+  <ng-container *ngFor="let mock of mockArrayCards">
+    <app-card></app-card>
+  </ng-container>
 </section>

@@ -17,4 +17,6 @@ import { CardComponent } from '../card/card.component';
   templateUrl: './block-stock.component.html',
   styleUrl: './block-stock.component.scss',
 })
-export class BlockStockComponent {}
+export class BlockStockComponent {
+  mockArrayCards = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+}
