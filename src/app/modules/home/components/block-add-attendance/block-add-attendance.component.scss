@@ -1,0 +1,16 @@
+.cards {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+@media screen and (max-width: 1150px) {
+  .cards {
+    .wrapper {
+      &:last-child {
+        display: none;
+      }
+    }
+  }
+}
