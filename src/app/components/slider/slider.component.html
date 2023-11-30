@@ -1,0 +1,13 @@
+<div class="brands">
+  <button class="angle">
+    <img ngSrc="assets/icons/rightAngle.svg" alt="" height="74" width="74">
+  </button>
+  <div class="image-container">
+    <div class="image" *ngFor="let item of mockImagesArray">
+      <img [src]="item" alt="">
+    </div>
+  </div>
+  <button class="angle">
+    <img src="assets/icons/leftAngle.svg" alt="">
+  </button>
+</div>
