@@ -5,6 +5,7 @@ import { HomeRoutes } from './home.routes';
 import { StockComponent } from './components/stock/stock.component';
 import { BlockStockComponent } from './components/block-stock/block-stock.component';
 import { BlockMaterialsComponent } from './components/block-materials/block-materials.component';
+import { BlockShowroomComponent } from './components/block-showroom/block-showroom.component';
 
 @NgModule({
   declarations: [HomeComponent],
@@ -15,6 +16,7 @@ import { BlockMaterialsComponent } from './components/block-materials/block-mate
     StockComponent,
     BlockStockComponent,
     BlockMaterialsComponent,
+    BlockShowroomComponent,
   ],
 })
 export class HomeModule {}

@@ -1,0 +1,23 @@
+.showroom {
+  margin-top: 36px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+@media screen and (max-width: 480px) {
+  .wrapper {
+    &:nth-child(3) {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .wrapper {
+    &:nth-child(2) {
+      display: none;
+    }
+  }
+}
