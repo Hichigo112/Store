@@ -1,0 +1,14 @@
+.section {
+  margin: 32px 24px 0 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+
+@media screen and (max-width: 480px) {
+  .section {
+    margin: 32px 12px 0 12px;
+    gap: 15px
+  }
+}

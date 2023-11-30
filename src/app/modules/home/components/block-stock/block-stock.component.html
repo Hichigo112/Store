@@ -1,0 +1,10 @@
+<app-block-title
+  text="Спецпредложения"
+  textLink="Перейти в раздел скидок"
+  route="/stock"
+></app-block-title>
+<section class="section">
+  <ng-container *ngFor="let mock of mockArrayCards">
+    <app-card></app-card>
+  </ng-container>
+</section>

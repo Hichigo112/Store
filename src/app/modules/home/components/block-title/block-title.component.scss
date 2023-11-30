@@ -1,0 +1,40 @@
+.wrapper {
+  margin-top: 34px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  color: var(--black);
+  font-size: 26px;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.link {
+  color: var(--red);
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-decoration-line: underline;
+}
+
+@media screen and (max-width: 768px) {
+  .link {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .wrapper {
+    justify-content: center;
+  }
+  .title {
+    font-size: 22px;
+  }
+}

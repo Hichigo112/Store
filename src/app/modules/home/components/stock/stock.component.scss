@@ -1,0 +1,156 @@
+.section {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.stock {
+  display: flex;
+  max-width: 1035px;
+  height: 301px;
+  border-radius: 8px;
+}
+
+
+.info {
+  display: flex;
+  width: 100%;
+  padding-left: 30px;
+  background-color: var(--blue);
+}
+
+.list {
+  margin-top: 30px;
+  list-style-type: none;
+}
+
+.title {
+  color: #FFF;
+  font-family: SF Compact Rounded, serif;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.additional {
+  color: #FFF;
+  font-size: 14px;
+  font-family: Roboto, sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  line-height: normal;
+}
+
+.link {
+  color: #FFF;
+  font-family: Roboto,sans-serif ;
+  font-size: 12px;
+  text-decoration-line: underline;
+  margin-right: 25px ;
+  &:last-child {
+    margin: 0;
+  }
+}
+
+.cost {
+  padding-top: 10px;
+  color: #FFFFFF;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.buy {
+  width: 142px;
+  height: 33px;
+  border-radius: 4px;
+  background: #FFF;
+  border: none;
+  margin-right: 10px;
+}
+
+.cart {
+  width: 55px;
+  height: 33px;
+  border-radius: 4px;
+  border: 1px solid #FFF;
+  background-color: var(--blue);
+}
+
+.list-item {
+  display: flex;
+  margin-top: 10px;
+}
+
+.facts {
+  margin-top: 25px;
+  display: flex;
+  max-width: 1035px;
+}
+
+.info-container {
+  display: flex;
+  align-items: center;
+  button {
+    display: flex;
+    width: 49px;
+    height: 49px;
+    padding: 15.2px 15.833px 14.2px 16.833px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: rgba(159, 166, 238, 0.10);
+    margin-right: 15px;
+    border: none;
+  }
+  p {
+    color: var(--black);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+
+
+@media screen and (max-width: 1000px) {
+  .facts {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .info-container {
+    button {
+      width: 38.891px;
+      height: 38.891px;
+    }
+    p {
+      font-size: 12px;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .info-container {
+    &:nth-child(3) {
+      display: none;
+    }
+    &:nth-child(4) {
+      display: none;
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .info-container {
+    button {
+      width: 29px;
+      height: 29px;
+    }
+    p {
+      font-size: 11px;
+    }
+  }
+}
