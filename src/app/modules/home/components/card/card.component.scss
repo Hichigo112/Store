@@ -1,0 +1,178 @@
+.card {
+  position: relative;
+  width: 245px;
+  height: 322px;
+  border-radius: 4px;
+  border: 0.7px solid rgba(134, 134, 134, 0.30);
+  background: #FFF;
+}
+
+.image {
+  width: 140px;
+  position: absolute;
+  top: 20%;
+  left: 20%;
+
+  img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+.specific {
+  position: absolute;
+  padding: 2px 12px;
+  color: #FFFFFF;
+  background-color: var(--orange);
+  top: 10px;
+  left: 0;
+}
+
+.favorite {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.info {
+  position: absolute;
+  top: 45%;
+  margin: 0 5px;
+}
+
+.list {
+  list-style-type: none;
+}
+
+.list-item {
+  padding-bottom: 5px;
+}
+
+.title {
+  color: var(--black);
+  font-family: SF Compact Rounded, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.additional {
+  color: #494949;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.link {
+  font-family: Roboto, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-decoration-line: underline;
+  &:nth-child(1) {
+    color: #7D7D7D;
+    margin-right: 50px;
+  }
+  &:nth-child(2) {
+    color: var(--green);
+  }
+}
+
+.cost {
+  color: var(--black);
+  font-family: Roboto, sans-serif;
+  font-size: 20.202px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.buy {
+  cursor: pointer;
+  padding: 8px 30px;
+  border-radius: 4px;
+  background-color: var(--blue);
+  border: none;
+  color: #FFFFFF;
+  margin-right: 10px;
+}
+
+.cart {
+  cursor: pointer;
+  padding: 8px 15px;
+  border-radius: 4px;
+  border: 1px solid var(--blue);
+  background-color: #FFFFFF;
+}
+
+@media screen and (max-width: 1150px) {
+  .card {
+    width: 226px;
+  }
+  .link {
+    &:nth-child(1) {
+      margin-right: 30px;
+    }
+  }
+  .buy {
+    padding: 6px 20px;
+  }
+  .cart {
+    padding: 4px 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .card {
+    width: 132px;
+    height: 195px;
+  }
+  .image {
+    width: auto;
+    top: auto;
+    left: auto;
+  }
+  .info {
+    position: absolute;
+    bottom: 0;
+    top: auto;
+    margin: 0;
+  }
+  .list-item {
+    padding: 0;
+  }
+  .specific {
+    display: none;
+  }
+  .title {
+    font-size: 12px;
+  }
+  .favorite {
+    display: none;
+  }
+  .additional {
+    display: none;
+  }
+  .link {
+    &:nth-child(1) {
+      margin: 0;
+      font-size: 11px;
+    }
+    &:nth-child(2) {
+      display: none;
+    }
+  }
+  .buy {
+    padding: 0;
+    width: 132px;
+    height: 31px;
+  }
+  .cart {
+    display: none;
+  }
+}
